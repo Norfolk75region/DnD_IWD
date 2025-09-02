@@ -1,6 +1,0 @@
-filters:
-  and:
-    - file.tags.contains("🎭")
-views:
-  - type: cards
-    name: Таблица
