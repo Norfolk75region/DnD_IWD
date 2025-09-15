@@ -1,0 +1,47 @@
+filters:
+  and:
+    - file.hasTag("🎭")
+    - file.name != "character"
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: В пачке
+    filters:
+      and:
+        - in_paty == true
+    order:
+      - file.name
+      - Имя
+      - Игрок
+      - Раса
+      - Пол
+      - Класс
+      - in_paty
+    sort:
+      - property: Игрок
+        direction: ASC
+    columnSize:
+      file.name: 257
+      note.Имя: 278
+      note.Игрок: 107
+      note.Раса: 183
+      note.Пол: 134
+  - type: table
+    name: Все
+    order:
+      - file.name
+      - Имя
+      - Игрок
+      - Раса
+      - Пол
+      - Класс
+    sort:
+      - property: Игрок
+        direction: ASC
+    columnSize:
+      file.name: 257
+      note.Имя: 278
+      note.Игрок: 107
+      note.Раса: 183
+      note.Пол: 134
