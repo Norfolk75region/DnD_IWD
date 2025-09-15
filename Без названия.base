@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.inFolder("content/Долина ледяных ветров/🏠 Локации")
+views:
+  - type: table
+    name: Таблица
+    order:
+      - file.name
+      - link_location
+      - tags
